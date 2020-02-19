@@ -118,8 +118,47 @@ body, html {
 </div>
 <iframe src="https://ourworldindata.org/grapher/share-of-the-population-with-access-to-improved-drinking-water" style="width: 100%; height: 600px; border: 0px none;"></iframe>
 
-<div style="height:500px; width: 95%; margin: 0 auto;padding: 20px; background-image: linear-gradient(#79D4E7, #FFFFFF);font-size:20px; font-family: 'Arial';">
+<div style="height:50px; width: 100%; margin: 0 auto;padding: 30px; background-image: linear-gradient(#79D4E7, #FFFFFF);font-size:20px; font-family: 'Arial';">
 
+<script>
+
+	window.addEventListener("scroll", myScript);
+
+
+
+	window.onbeforeunload = function () {
+	  window.scrollTo(0, 0);
+	}
+
+	document.getElementById("about").style.background = "#9BD920"	
+
+
+	function myScript() {
+
+		console.log("scrolling");
+
+		//This is a line of code I took from StackOverflow.  
+		//https://stackoverflow.com/questions/11373741/detecting-by-how-much-user-has-scrolled
+		var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+		console.log(scrollTop)
+
+		if (scrollTop < 372) {
+			document.getElementById("about").style.background = "#9BD9F0"	
+
+			text = "<pre>Symbol: H\nAtomic mass: 1.00784\nAtomic number: 1\nElectrons per shell: 1\nElectronegativity: 2.2\nIsotopes:\n\tDeuterium\n\tTritium\n</pre>"
+			document.getElementById("about").innerHTML = text;
+		}
+		if (scrollTop >= 372) {
+			document.getElementById("about").style.background = "#E37564";
+		}
+		if (scrollTop >= 2390) {
+			document.getElementById("about").style.background = "#C4C4C4";
+		}
+	
+
+	}
+
+</script>
 
 </div>
 
