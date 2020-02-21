@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<html lang="en">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -93,14 +94,16 @@ body, html {
    background-size: auto;
 }
 
+  .fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
 
 
 </style>
 </head>
 <body>
-
-
-
+<head>
 
 
 <ul>
@@ -119,44 +122,61 @@ body, html {
 <iframe src="https://ourworldindata.org/grapher/share-of-the-population-with-access-to-improved-drinking-water" style="width: 100%; height: 600px; border: 0px none;"></iframe>
 
 <div style="height:50px; width: 100%; margin: 0 auto;padding: 30px; background-image: linear-gradient(#79D4E7, #FFFFFF);font-size:20px; font-family: 'Arial';">
+  
+  <title>Clean Water & Sanitation</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"> </script>
 
-<script>
+</head>
+<body>
 
-	window.addEventListener("scroll", myScript);
-
-
-
-	window.onbeforeunload = function () {
-	  window.scrollTo(0, 0);
-	}
-
-	document.getElementById("about").style.background = "#9BD920"	
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <h1>Clean Water & Sanitation</h1>
+  <p>Goal #6</p> 
+</div>
 
 
-	function myScript() {
 
-		console.log("scrolling");
+<div class="container" style="margin-top:30px">
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>About Goal #6</h2>
+     <div class="fakeimg">Fake Image</div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+      <h3>Some Links</h3>
+      <p>Lorem ipsum dolor sit ame.</p>
+      <ul class="nav nav-pills flex-column">
+        
+      </ul>
+      <hr class="d-sm-none">
+    </div>
+    <div class="col-sm-8">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <div class="fakeimg">Fake Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <br>
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <div class="fakeimg">Fake Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+  </div>
+</div>
 
-		//This is a line of code I took from StackOverflow.  
-		//https://stackoverflow.com/questions/11373741/detecting-by-how-much-user-has-scrolled
-		var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
-		console.log(scrollTop)
+<div class="jumbotron text-center" style="margin-bottom:0">
 
-		if (scrollTop < 372) {
-			document.getElementById("about").style.background = "#9BD9F0"	
+</div>
 
-			text = "<pre>Symbol: H\nAtomic mass: 1.00784\nAtomic number: 1\nElectrons per shell: 1\nElectronegativity: 2.2\nIsotopes:\n\tDeuterium\n\tTritium\n</pre>"
-			document.getElementById("about").innerHTML = text;
-		}
-		if (scrollTop >= 372) {
-			document.getElementById("about").style.background = "#E37564";
-		}
-		if (scrollTop >= 2390) {
-			document.getElementById("about").style.background = "#C4C4C4";
-		}
-	
+</body>
 
-	}
+
 
 </script>
 
