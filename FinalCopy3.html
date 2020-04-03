@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<html lang="en">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -63,10 +64,11 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
 }
-  
+  <style>
+    
     .parallaxA {
       /* The image used */
-      background-image: url("images/1_Hydrogen.jpg");
+      background-image: url("images/CleanWater.png");
       /* Set a specific height */
       min-height: 800px; 
       /* Create the parallax scrolling effect */
@@ -77,7 +79,7 @@ body, html {
     }
       .parallaxB {
       /* The image used */
-      background-image: url("images/2_Helium.jpg");
+      background-image: url("images/Clean.png");
       /* Set a specific height */
       min-height: 800px; 
       /* Create the parallax scrolling effect */
@@ -86,17 +88,22 @@ body, html {
       background-repeat: no-repeat;
       background-size: auto;
     }
-    .parallaxC {
-      /* The image used */
-      background-image: url("images/3_Lithium.jpg");
-      /* Set a specific height */
-      min-height: 800px; 
-      /* Create the parallax scrolling effect */
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: auto;
-    }
+
+
+    .container {
+  position: relative;
+  font-family: Arial;
+}
+
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 </style>
 <ul>
   <li><a class="active" href="FinalCopy.html">Clean Water</a></li>
@@ -104,27 +111,26 @@ body, html {
   <li><a href="FinalCopy3.html">Support The Cause</a></li>
 
 
-<div class="parallaxA"></div>
-
-<div style="height:500px;background-image: linear-gradient(#9BD9F0, #E37564);font-size:36px">
-Scroll Up and Down this page to see the parallax scrolling effect.
-This div is just here to enable scrolling.
-Tip: Try to remove the background-attachment property to remove the scrolling effect.
+  
+<div class="container">
+  <img src="images/14.png" alt="Nature" style="width:100%;">
+  <div class="text-block">
+    <h4>Donate Now</h4>
+     <a href="https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-14-life-below-water.html">Click Here</a>
+  </div>
 </div>
-
 
 <div class="parallaxB"></div>
 
-<div style="height:500px; width: 70%; margin: 0 auto;padding: 20px; background-image: linear-gradient(#E37564, #C4C4C4);font-size:36px">
-Scroll Up and Down this page to see the parallax scrolling effect.
-This div is just here to enable scrolling.
-Tip: Try to remove the background-attachment property to remove the scrolling effect.
+<div class="container">
+  <img src="images/CleanWater.png" alt="Nature" style="width:100%;">
+  <div class="text-block">
+    <h4>Donate Now</h4>
+    <a href="https://thewaterproject.org/give-water">Click Here</a>
+  </div>
 </div>
 
-<div class = "parallaxC"></div>
-</head>
-<body>
-
+<div class="parallaxA"></div>
 
 
 </ul>
