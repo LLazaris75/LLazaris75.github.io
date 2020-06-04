@@ -319,7 +319,7 @@ var Enemy = SheetSprite.extend({
     this.scale.set(0.5, 0.5);
     this.alive = true;
     this.onFirstState = true;
-    this.stepDelay = 1; // try 2 secs to start with...
+    this.stepDelay = 1; 
     this.stepAccumulator = 0;
     this.doShoot - false;
     this.bullet = null;
@@ -557,7 +557,7 @@ function updateAliens(dt) {
   }
   alienYDown = 0;
 }
-
+//USE THIS
 function resolveBulletEnemyCollisions() {
   var bullets = player.bullets;
   
@@ -659,7 +659,8 @@ function drawGame(resized) {
 
 function drawStartScreen() {
   fillCenteredText("Space Invaders", CANVAS_WIDTH/2, CANVAS_HEIGHT/2.75, '#FFFFFF', 36);
-  fillBlinkingText("Press enter to play!", CANVAS_WIDTH/2, CANVAS_HEIGHT/2, 500, '#FFFFFF', 36);
+  fillBlinkingText("Press enter to play! Press X to Shoot", CANVAS_WIDTH/2, CANVAS_HEIGHT/2, 500, '#FFFFFF', 36);
+  fillBlinkingText("Arrow Keys to Move", CANVAS_WIDTH/2, CANVAS_HEIGHT/1.75, 500, '#FFFFFF', 36);
 }
 
 function animate() {
